@@ -13,6 +13,11 @@ module.exports = {
       blueGray: "#1d2731",
       lightGray: "#aaaaaa"
     },
+    extend: {
+      backgroundColor: {
+        'global': 'var(--global-bg)',
+      },
+    },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
