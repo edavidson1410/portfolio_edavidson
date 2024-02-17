@@ -1,17 +1,18 @@
 import React from 'react'
+import Button from "../../components/Button"
 
 const HeroSection = () => {
 
   return (
-    <section className="flex m-20">
-      <div>
-        <h1 className="lg:text-6xl">Hi! I'm Eric Davidson</h1>
-        <p>This is the description of me</p>
-      </div>   
-      <div>
-        <img className="border-solid rounded-full" src="/assets/placeholder.jpg" alt="profile picture" />
+    <section className="flex m-20">   
+      <div className="flex content-center justify-center">
+        <img className="border-solid rounded-full h-3/4" src="/assets/placeholder.jpg" alt="profile picture" />
       </div>
-
+      <div className="flex flex-col gap-5 content-center justify-center">
+        <h1 className="lg:text-6xl">I'm Eric Davidson</h1>
+        <p>Web Designer. Front-End, Back-End. Results.</p>
+        <Button text="Contact Me!"/>
+      </div>
     </section>
   )
 }
