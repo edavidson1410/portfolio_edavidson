@@ -6,21 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      // blue
-      primary: "#328cc1",
-      // orange
-      secondary: "#d98310",
-      // darkerblue
-      primaryDark: "#083c5d",
-      // blueGray
-      accentBlue: "#1d2731",
-      // lightGray
-      accentGray: "#aaaaaa"
-    },
     extend: {
-      backgroundColor: {
-        'global': 'var(--global-bg)',
+      colors: {
+        // blue
+        primary: "#328cc1",
+        // orange
+        secondary: "#d98310",
+        // darkerblue
+        primaryDark: "#083c5d",
+        // blueGray
+        accentBlue: "#1d2731",
+        // lightGray
+        accentGray: "#aaaaaa"
       },
     },
   },
