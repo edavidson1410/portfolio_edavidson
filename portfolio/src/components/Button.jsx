@@ -9,7 +9,7 @@ function Button(props) {
   return (
     <button 
     onClick={onClick}
-    className='border rounded-md p-2 bg-secondary'
+    className='border rounded-md p-2 bg-secondary w-28 self-center'
     >{text}</button>
   )
 }

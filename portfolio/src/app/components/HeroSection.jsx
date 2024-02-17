@@ -10,7 +10,7 @@ const HeroSection = () => {
       </div>
       <div className="flex flex-col gap-5 content-center justify-center">
         <h1 className="lg:text-6xl">I'm Eric Davidson</h1>
-        <p>Web Designer. Front-End, Back-End. Results.</p>
+        <p>Web Developer. Front-End, Back-End. Results.</p>
         <Button text="Contact Me!"/>
       </div>
     </section>
