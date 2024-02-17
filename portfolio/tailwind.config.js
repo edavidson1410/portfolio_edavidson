@@ -7,11 +7,16 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primaryBlue: "#328cc1",
-      primaryOrange: "#d98310",
-      secondaryBlue: "#083c5d",
-      blueGray: "#1d2731",
-      lightGray: "#aaaaaa"
+      // blue
+      primary: "#328cc1",
+      // orange
+      secondary: "#d98310",
+      // darkerblue
+      primaryDark: "#083c5d",
+      // blueGray
+      accentBlue: "#1d2731",
+      // lightGray
+      accentGray: "#aaaaaa"
     },
     extend: {
       backgroundColor: {
