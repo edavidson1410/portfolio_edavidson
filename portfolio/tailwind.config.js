@@ -17,7 +17,9 @@ module.exports = {
         // blueGray
         accentBlue: "#1d2731",
         // lightGray
-        accentGray: "#aaaaaa"
+        accentGray: "#aaaaaa",
+        // offwhite
+        background: "#FAF9F6"
       },
     },
   },

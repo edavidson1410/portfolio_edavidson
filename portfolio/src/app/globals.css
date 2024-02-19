@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --global-bg: #1d2731;
+  --global-bg: #FAF9F6;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -15,7 +15,7 @@
 } */
 
 body {
-  color: white;
+  color: #328cc1;
   background-color: var(--global-bg);
 }
 
