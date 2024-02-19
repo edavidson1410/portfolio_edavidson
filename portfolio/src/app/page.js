@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
 import ContactSection from './components/ContactSection';
 
@@ -7,10 +8,12 @@ import ContactSection from './components/ContactSection';
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen flex-col container mx-auto text-center">
+    <main className="flex min-h-screen max-w-full flex-col m-4 text-center">
       <NavBar />
+      <AboutSection />
       <HeroSection />
       <ProjectSection />
+      <ContactSection />
     </main>
   );
 }
