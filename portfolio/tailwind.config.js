@@ -10,8 +10,8 @@ module.exports = {
       colors: {
         // blue
         primary: "#328cc1",
-        // orange
-        secondary: "#d98310",
+        // purple
+        secondary: "#452c63",
         // darkerblue
         primaryDark: "#083c5d",
         // blueGray
@@ -19,7 +19,9 @@ module.exports = {
         // lightGray
         accentGray: "#aaaaaa",
         // offwhite
-        background: "#FAF9F6"
+        background: "#FAF9F6",
+        // palermoPink
+        accentPink: "#eec0c8"
       },
     },
   },
