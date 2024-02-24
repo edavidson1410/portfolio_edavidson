@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen max-w-full flex-col m-4 text-center">
       <NavBar />
-      <AboutSection />
       <HeroSection />
+      <AboutSection />
       <ProjectSection />
       <ContactSection />
     </main>

@@ -7,7 +7,7 @@ function ProjectSection() {
   
   return (
     <section id="projects">
-      <h1 className='text-5xl my-10'>Projects</h1>
+      <h1 className='text-4xl my-10'>Projects</h1>
       <div className='divide-y divide-solid'>
         <ProjectCard
         title="CouchCat"
