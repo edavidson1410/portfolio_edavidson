@@ -24,9 +24,3 @@ function TechStack() {
 }
 
 export default TechStack
-
-//       {technologies.map(() => {
-//     <li>
-//     <img src="/icons/react.svg" /> 
-// </li>
-// })}
