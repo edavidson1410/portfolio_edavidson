@@ -15,7 +15,7 @@ function TechStack() {
     <ul className="container flex">
       {Object.entries(svgs).map(([key, value]) => (
         <li key={key} className="flex flex-col gap-1">
-          <img src={value} alt="tech stack img" className="w-1/2 h-1/2 object-fill self-center" />
+          <img src={value} alt="tech stack img" className="h-1/2 object-fill self-center" />
           <h4>{key}</h4>
         </li>
       ))}

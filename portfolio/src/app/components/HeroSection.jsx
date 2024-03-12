@@ -4,7 +4,7 @@ import Button from "../../components/button"
 const HeroSection = () => {
 
   return (
-    <section className="flex m-10 mt-20" id="hero">   
+    <section className="flex m-10 mt-20 justify-center" id="hero">   
     {/* offcenter */}
       <div className="flex flex-col gap-4 content-center justify-center">
         <h1 className="text-6xl font-bold">Eric Davidson</h1>
