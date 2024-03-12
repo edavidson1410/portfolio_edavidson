@@ -10,7 +10,7 @@ import ContactSection from './components/ContactSection';
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen max-w-full flex-col m-4 text-center">
+    <main className="flex min-h-screen max-w-full flex-col m-4 text-center md:h-full md:max-w-48">
       <NavBar />
       <HeroSection />
       <AboutSection />
