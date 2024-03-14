@@ -13,7 +13,7 @@ function ProjectCard(props) {
         <a href={gitLink} target="_blank" className="border-2 border-primary rounded-md p-1 max-w-fit">GitHub Link</a>
       </div>
       <div>
-        <img src={image} alt="project image" className=""/>
+        <img src={image} alt="project image" className="max-w-1/2 ml-1/4"/>
       </div>
     </div>
   )

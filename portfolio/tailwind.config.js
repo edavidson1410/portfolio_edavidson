@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '1/2': '50%'
+      },
+      margin: {
+        '1/4': '25%'
+      },
       screens: {
         'sm': '640px', // Small screens
         'md': '768px', // Medium screens
