@@ -18,7 +18,7 @@ function ProjectSection() {
          />
         <ProjectCard 
         title="Personal Portfolio"
-        image="/assets/placeholder.jpg"
+        image="/assets/portfolio_example.png"
         description={portfolioDescript}
         gitLink="https://github.com/edavidson1410/portfolio_edavidson"
         />
