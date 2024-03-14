@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function TechStack() {
 
@@ -15,7 +16,7 @@ function TechStack() {
     <ul className="container flex justify-center gap-2">
       {Object.entries(svgs).map(([key, value]) => (
         <li key={key} className="flex flex-col gap-1">
-          <img src={value} alt="tech stack img" className="h-1/2 object-fill self-center" />
+          <Image src={value} alt="tech stack img" className="h-1/2 object-fill self-center" />
           <h4>{key}</h4>
         </li>
       ))}
