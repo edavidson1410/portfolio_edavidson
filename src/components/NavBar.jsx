@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 
 function NavBar() {
   return (
@@ -14,11 +15,8 @@ function NavBar() {
           <Link href="#projects" scroll>Projects</Link>
         </nav>
       </header>
-
       <Link href="#contact" scroll>
-      <button 
-        className='rounded-md p-1 bg-secondary text-accentPink border-solid border-2 border-accentPink self-center focus:bg-primary'
-        >Contact Me!</button>
+        <Button text="Contact Me!" className="p-2"/>
       </Link>
     </section>
 
