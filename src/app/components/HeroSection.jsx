@@ -3,6 +3,8 @@ import React from 'react';
 
 const HeroSection = () => {
 
+  const headerTransition = "";
+
   return (
     <section className="flex m-10 mt-20 justify-center" id="hero">   
     {/* offcenter */}
