@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 import Button from './Button';
+import Image from 'next/image';
+import test_logo from '../../public/test_svg.svg';
 
 function NavBar() {
   return (
     <section className="flex justify-between content-center">
       {/* future logo */}
       <header className="flex gap-2">
-        <div className="self-center">Logo</div>
+        <Image className="self-center w-1/12" src={test_logo} alt="Logo" />
         <div className="h-6 border-solid border-secondary border self-center"></div>
         <nav className="flex gap-3 self-center">
           <Link href="#hero" scroll className="text-xl">Home</Link>
