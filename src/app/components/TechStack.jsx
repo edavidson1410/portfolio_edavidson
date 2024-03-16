@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 
 function TechStack() {
@@ -10,7 +10,7 @@ function TechStack() {
       "MySQL" : "/icons/mysql-icon.svg",
       "Spring" : "/icons/spring-icon.svg",
       "MUI" : "/icons/material-ui.svg"
-    }
+    };
 
   return (
     // not rendering
@@ -22,7 +22,7 @@ function TechStack() {
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
-export default TechStack
+export default TechStack;

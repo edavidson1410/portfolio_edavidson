@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 function ProjectCard(props) {
     
-    const { title, gitLink, image, description } = props
+    const { title, gitLink, image, description } = props;
 
   return (
     <div className="flex m-8 flex-col border-b-4 border-b-secondary p-4 gap-4">
@@ -16,7 +16,7 @@ function ProjectCard(props) {
         <img src={image} alt="project image" className="max-w-1/2 ml-1/4"/>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;

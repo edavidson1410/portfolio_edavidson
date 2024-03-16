@@ -1,5 +1,5 @@
-import React from 'react'
-import TechStack from './TechStack'
+import React from 'react';
+import TechStack from './TechStack';
 
 function AboutSection() {
   return (
@@ -11,7 +11,7 @@ function AboutSection() {
       </div>
 
     </section>
-  )
+  );
 }
 
-export default AboutSection
+export default AboutSection;

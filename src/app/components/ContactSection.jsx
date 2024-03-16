@@ -1,5 +1,5 @@
-import React from 'react'
-import ContactForm from './ContactForm'
+import React from 'react';
+import ContactForm from './ContactForm';
 
 function ContactSection() {
   return (
@@ -8,7 +8,7 @@ function ContactSection() {
       <p>Add socials</p>
       <ContactForm/>
     </section>
-  )
+  );
 }
 
-export default ContactSection
+export default ContactSection;

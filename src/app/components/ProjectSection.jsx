@@ -1,10 +1,10 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+import React from 'react';
+import ProjectCard from './ProjectCard';
 
 function ProjectSection() {
 
-  const couchCatDescript = "CouchCat streamlines the process of finding a movie to watch by allowing the user to search across streaming service catalogues, filtering results by categories like genre, director, and cast."
-  const portfolioDescript ="This site you currently browsing! This is my main site to show off my work. Uses responsive design to look good on mobile and your desktop!"
+  const couchCatDescript = "CouchCat streamlines the process of finding a movie to watch by allowing the user to search across streaming service catalogues, filtering results by categories like genre, director, and cast.";
+  const portfolioDescript ="This site you currently browsing! This is my main site to show off my work. Uses responsive design to look good on mobile and your desktop!";
 
   return (
     <section id="projects">
@@ -25,7 +25,7 @@ function ProjectSection() {
       </div>
 
     </section>
-  )
+  );
 }
 
-export default ProjectSection
+export default ProjectSection;

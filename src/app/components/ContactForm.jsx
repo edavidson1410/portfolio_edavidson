@@ -1,4 +1,5 @@
-import React from 'react'
+import Button from '@/components/Button';
+import React from 'react';
 
 function ContactForm(props) {
   return (
@@ -18,11 +19,11 @@ function ContactForm(props) {
             </div>
         </div>
           <div className="text-center">
-            <button type="submit" className="bg-secondary text-accentPink px-6 py-3 font-xl rounded-md border-2 border-accentPink">Send Message</button>
+            <Button type="submit" text="Send Message" className="px-6 py-3" />
           </div>
        </form>
      </div>
-  )
+  );
 }
 
-export default ContactForm
+export default ContactForm;

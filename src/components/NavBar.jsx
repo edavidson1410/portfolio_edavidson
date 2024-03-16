@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import React from 'react'
-import Button from './Button'
+import Link from 'next/link';
+import React from 'react';
+import Button from './Button';
 
 function NavBar() {
   return (
@@ -10,17 +10,17 @@ function NavBar() {
         <div className="self-center">Logo</div>
         <div className="h-6 border-solid border-secondary border self-center"></div>
         <nav className="flex gap-3 self-center">
-          <Link href="#hero" scroll>Home</Link>
-          <Link href="#about" scroll>About</Link>
-          <Link href="#projects" scroll>Projects</Link>
+          <Link href="#hero" scroll className="text-xl">Home</Link>
+          <Link href="#about" scroll className="text-xl">About</Link>
+          <Link href="#projects" scroll className="text-xl">Projects</Link>
         </nav>
       </header>
       <Link href="#contact" scroll>
-        <Button text="Contact Me!" className="p-2"/>
+        <Button text="Contact Me!" className="p-1 text-xl"/>
       </Link>
     </section>
 
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
