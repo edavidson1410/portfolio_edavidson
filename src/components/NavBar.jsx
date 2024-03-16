@@ -10,14 +10,14 @@ function NavBar() {
       {/* future logo */}
       <header className="flex gap-2">
         <Image className="self-center w-1/12" src={test_logo} alt="Logo" />
-        <div className="h-6 border-solid border-secondary border self-center"></div>
+        <div className="h-12 border-solid border-secondary border self-center"></div>
         <nav className="flex gap-3 self-center">
           <Link href="#hero" scroll className="text-xl">Home</Link>
           <Link href="#about" scroll className="text-xl">About</Link>
           <Link href="#projects" scroll className="text-xl">Projects</Link>
         </nav>
       </header>
-      <Link href="#contact" scroll>
+      <Link href="#contact" className="flex" scroll>
         <Button text="Contact Me!" className="p-1"/>
       </Link>
     </section>
