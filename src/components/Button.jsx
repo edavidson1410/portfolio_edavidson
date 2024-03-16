@@ -4,8 +4,8 @@ function Button(props) {
 
     const { text, className, onClick, type } = props;
 
-    const buttonClassNames = `rounded-md bg-secondary text-accentPink border-solid 
-    border-2 border-accentPink self-center hover:bg-primary 
+    const buttonClassNames = `text-xl rounded-md bg-secondary text-accentPink border-solid 
+    border-2 border-accentPink self-center hover:bg-primary text-nowrap
     ${className}`;
 
   return (

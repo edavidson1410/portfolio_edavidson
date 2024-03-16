@@ -18,7 +18,7 @@ function NavBar() {
         </nav>
       </header>
       <Link href="#contact" scroll>
-        <Button text="Contact Me!" className="p-1 text-xl"/>
+        <Button text="Contact Me!" className="p-1"/>
       </Link>
     </section>
 
