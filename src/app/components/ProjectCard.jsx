@@ -6,7 +6,7 @@ function ProjectCard(props) {
     const { title, gitLink, image, description } = props;
 
   return (
-    <div className="flex m-8 flex-col border-b-4 border-b-secondary p-4 gap-4">
+    <div className="flex m-8 flex-col md:flex-row border-b-4 border-b-secondary p-4 gap-4">
       <div className="flex flex-col gap-5 items-center">
         <h2 className="text-2xl">{title}</h2>
         <p>{description}</p>

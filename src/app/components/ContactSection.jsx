@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 function ContactSection() {
   return (
     <section id="contact">
-      <h1 className="text-4xl my-10">Contact</h1>
+      <h1 className="text-4xl my-10 font-large">Contact</h1>
       <p>Add socials</p>
       <ContactForm/>
     </section>

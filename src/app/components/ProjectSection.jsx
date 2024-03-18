@@ -7,8 +7,8 @@ function ProjectSection() {
   const portfolioDescript ="This site you currently browsing! This is my main site to show off my work. Uses responsive design to look good on mobile and your desktop!";
 
   return (
-    <section id="projects">
-      <h1 className='text-4xl my-10'>Projects</h1>
+    <section id="projects m-10">
+      <h1 className='text-4xl my-10 font-large'>Projects</h1>
       <div>
         <ProjectCard
         title="CouchCat"
