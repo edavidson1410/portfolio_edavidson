@@ -8,7 +8,7 @@ function Button(props) {
     border-2 border-accentPink self-center hover:bg-primary text-nowrap
     ${className}`;
 
-    const buttonTransition = "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300";
+    const buttonTransition = "transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl";
 
   return (
     <button
