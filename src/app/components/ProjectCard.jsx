@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Button from '@/components/Button';
 
 function ProjectCard(props) {
     
@@ -10,10 +11,10 @@ function ProjectCard(props) {
       <div className="flex flex-col gap-5 items-center">
         <h2 className="text-2xl">{title}</h2>
         <p>{description}</p>
-        <a href={gitLink} target="_blank" className="border-2 border-primary rounded-md p-1 max-w-fit">GitHub Link</a>
       </div>
-      <div>
-        <img src={image} alt="project image" className="max-w-1/2 ml-1/4"/>
+      <div className="flex flex-col gap-4">
+        <img src={image} alt="project image" className="max-w-1/2 self-center"/>
+        <a href={gitLink} target="_blank"><Button text="GitHub Link" className="p-1"/></a>
       </div>
     </div>
   );

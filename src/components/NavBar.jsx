@@ -6,7 +6,7 @@ import test_logo from '../../public/test_svg.svg';
 
 function NavBar() {
 
-  const linkHover = "hover:underline hover:text-accentPink";
+  const linkHover = "hover:underline hover:text-secondary";
 
   return (
     <section className="flex justify-between content-center">
