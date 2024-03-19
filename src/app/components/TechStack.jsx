@@ -14,7 +14,7 @@ function TechStack() {
 
   return (
     // not rendering
-    <ul className="container flex justify-center">
+    <ul className="flex justify-center">
       {Object.entries(svgs).map(([key, value]) => (
         <li key={key} className="flex flex-col gap-1">
           <img src={value} alt="tech stack img" className="max-w-1/4 h-1/4 object-fill self-center" />

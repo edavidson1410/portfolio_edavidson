@@ -16,3 +16,16 @@ body {
     text-wrap: balance;
   }
 }
+
+/* .glow-overlay {
+  --glow-size: 25rem;
+  position:absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radian-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%
+  );
+} */
