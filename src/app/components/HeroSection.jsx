@@ -6,7 +6,7 @@ const HeroSection = () => {
   const headerTransition = "";
 
   return (
-    <section className="flex justify-center h-screen" id="hero">   
+    <section className="flex justify-center h-screen relative bottom-36" id="hero">   
     {/* offcenter */}
       <div className="flex flex-col gap-4 content-center justify-center">
         <h1 className="text-6xl font-black animate">Eric Davidson</h1>
