@@ -20,6 +20,9 @@ module.exports = {
         'lg': '1024px', // Large screens
         'xl': '1280px', // Extra-large screens
       },
+      height: {
+        '80vh': '80vh'
+      },
       colors: {
         // blue
         primary: "#328cc1",
