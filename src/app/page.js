@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main >
       <NavBar />
-      <Socials />
       <section className="flex min-h-screen max-w-full flex-col m-4 text-center md:m-8">
         <HeroSection />
         <AboutSection />

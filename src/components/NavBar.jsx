@@ -5,6 +5,7 @@ import Button from './Button';
 import Image from 'next/image';
 import test_logo from '../../public/test_svg.svg';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
+import Socials from './Socials';
 
 function NavBar() {
 
@@ -24,9 +25,13 @@ function NavBar() {
           <Link href="#projects" scroll className={`text-xl ${linkHover}`}>Projects</Link>
         </nav>
       </header>
-      <Link href="#contact" className="flex justify-end" scroll>
-        <Button text="Contact Me!" className="p-1 text-xl m-3"/>
-      </Link>
+      <div className="flex">
+        <Socials />
+        <Link href="#contact" className="flex justify-end" scroll>
+          <Button text="Contact Me!" className="p-1 text-xl m-3"/>
+        </Link>
+      </div>
+
     </section>
 
   );
