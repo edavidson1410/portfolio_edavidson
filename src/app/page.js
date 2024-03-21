@@ -5,18 +5,19 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
 import ContactSection from './components/ContactSection';
-import Cursor from '@/components/Cursor';
-
 
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen max-w-full flex-col m-4 text-center md:m-8">
+    <main >
       <NavBar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectSection />
-      <ContactSection />
+      <section className="flex min-h-screen max-w-full flex-col m-4 text-center md:m-8">
+        <HeroSection />
+        <AboutSection />
+        <ProjectSection />
+        <ContactSection />
+      </section>
+
     </main>
   );
 }

@@ -20,6 +20,9 @@ module.exports = {
         'lg': '1024px', // Large screens
         'xl': '1280px', // Extra-large screens
       },
+      height: {
+        '80vh': '80vh'
+      },
       colors: {
         // blue
         primary: "#328cc1",
@@ -34,7 +37,9 @@ module.exports = {
         // offwhite
         background: "#FAF9F6",
         // palermoPink
-        accentPink: "#eec0c8"
+        accentPink: "#eec0c8",
+        // eggshell white,
+        eggShell: "#FAF9F6"
       },
     },
   },
