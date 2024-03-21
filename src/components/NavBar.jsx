@@ -13,9 +13,9 @@ function NavBar() {
   const linkHover = "hover:underline hover:text-secondary";
 
   return (
-    <section className={`flex justify-between content-center sticky top-0 z-10 my-4 transition-shadow ${scrollPosition > 0 ? "shadow-xl bg-opacity-80 backdrop-blur-lg" : "shadow-none"}`}>
+    <section className={`flex justify-between content-center sticky top-0 z-10 transition-shadow ${scrollPosition > 0 ? "shadow-md bg-opacity-80 backdrop-blur-lg" : "shadow-none"}`}>
       {/* future logo */}
-      <header className="flex gap-2 m-4">
+      <header className="flex gap-2 m-3">
         <Image className="self-center w-1/12" src={test_logo} alt="Logo" />
         <div className="h-12 border-solid border-secondary border self-center"></div>
         <nav className="flex gap-3 self-center">
@@ -25,7 +25,7 @@ function NavBar() {
         </nav>
       </header>
       <Link href="#contact" className="flex justify-end" scroll>
-        <Button text="Contact Me!" className="p-1 text-xl m-4"/>
+        <Button text="Contact Me!" className="p-1 text-xl m-3"/>
       </Link>
     </section>
 

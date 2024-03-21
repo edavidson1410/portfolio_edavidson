@@ -1,6 +1,5 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Cursor from "@/components/Cursor";
 
 // const inter = Inter({ subsets: ["latin"] });
 const roboto_init = Roboto({ subsets: ['latin'], weight: '300' });
