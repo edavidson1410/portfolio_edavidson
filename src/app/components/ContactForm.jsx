@@ -3,7 +3,7 @@ import React from 'react';
 
 function ContactForm(props) {
   return (
-    <div className="md:max-w-1/4 md:ml-1/4">
+    <div className="md:max-w-1/2 md:ml-1/4">
       <form id="contactForm">
         <div className="mb-4">
             <div className="mx-0 mb-1 sm:mb-4">

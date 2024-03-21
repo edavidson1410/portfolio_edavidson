@@ -1,16 +1,22 @@
+'use client';
+
 import React from 'react';
 import {
-    EmailIcon,
-    GithubIcon,
-    LinkedinIcon
+  LinkedinIcon,
+  GithubIcon,
+  EmailIcon,
+  LinkedinShareButton
 } from 'next-share';
 
 function Socials() {
+
+  const sharedStyles = "5rem";
+
   return (
     <div>
-      <EmailIcon />
-      <GithubIcon />
-      <LinkedinIcon />
+      <LinkedinIcon round={true} />
+      <GithubIcon round={true}/>
+      <EmailIcon round={true}/>
     </div>
   )
 }
