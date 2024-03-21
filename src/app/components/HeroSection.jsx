@@ -13,7 +13,7 @@ const HeroSection = () => {
         <p>Web Developer. Front-End, Back-End. Results.</p>
         <a 
         href="/Eric_Davidson_Resume.pdf" target="_blank"
-        ><Button text="Download Resume" className="p-1"/></a>
+        ><Button text="Download Resume" className="p-1 text-xl"/></a>
       </div>
     </section>
   );

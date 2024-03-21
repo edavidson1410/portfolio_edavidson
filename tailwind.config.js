@@ -37,7 +37,9 @@ module.exports = {
         // offwhite
         background: "#FAF9F6",
         // palermoPink
-        accentPink: "#eec0c8"
+        accentPink: "#eec0c8",
+        // eggshell white,
+        eggShell: "#FAF9F6"
       },
     },
   },
