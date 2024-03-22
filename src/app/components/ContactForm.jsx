@@ -1,10 +1,28 @@
+'use client';
+
 import Button from '@/components/Button';
 import React from 'react';
 
 function ContactForm(props) {
+
+  const url = 'http://localhost:3000/email';
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    fetch(url, {
+      method: 'POST',
+    })
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  };
+
   return (
     <div className="md:max-w-1/2 md:ml-1/4">
-      <form id="contactForm">
+      <form id="contactForm" onSubmit={onSubmit}>
         <div className="mb-4">
             <div className="mx-0 mb-1 sm:mb-4">
                 <div className="mx-0 mb-1 sm:mb-4">

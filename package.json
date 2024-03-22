@@ -10,6 +10,7 @@
     "lint-fix": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
+    "@vercel/postgres": "^0.7.2",
     "dotenv": "^16.4.5",
     "next": "14.1.0",
     "next-share": "^0.27.0",
@@ -19,6 +20,8 @@
     "resend": "^3.2.0"
   },
   "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.67",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
