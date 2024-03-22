@@ -9,6 +9,7 @@ function ContactForm(props) {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log('hi')
     fetch(url, {
       method: 'POST',
     })
