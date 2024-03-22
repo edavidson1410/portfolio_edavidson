@@ -1,9 +1,14 @@
 'use client';
 
 import Button from '@/components/Button';
-import React from 'react';
+import React, { useState } from 'react';
 
 function ContactForm(props) {
+
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [date, setDate] = useState();
 
   const url = 'http://localhost:3000/email';
 
