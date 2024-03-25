@@ -15,7 +15,7 @@ function useCanvas() {
     particleEffect(canvas, context);
   }, []);
 
-  return <canvas width={900} height={800} ref={ref} className="absolute top-0 left-0"></canvas>;
+  return <canvas width={900} height={800} ref={ref} className="absolute top-0 left-0 z-0"></canvas>;
 }
 
 export default useCanvas;
