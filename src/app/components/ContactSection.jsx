@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import Socials from '@/components/Socials';
 
 
 function ContactSection() {
