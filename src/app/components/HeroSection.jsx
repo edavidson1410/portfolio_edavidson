@@ -8,6 +8,8 @@ const HeroSection = () => {
 
   const headerTransition = "";
 
+  // TODO: Improve Canvas speed
+
   return (
     <section className="flex justify-center h-screen relative bottom-36 overflow-hidden" id="hero">
       <Canvas />

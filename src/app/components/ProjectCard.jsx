@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Button from '@/components/Button';
+import TechStack from './TechStack';
 
 function ProjectCard(props) {
     
@@ -16,6 +17,7 @@ function ProjectCard(props) {
       <div className="flex flex-col gap-4">
         <img src={image} alt="project image" className="max-w-80 self-center"/>
       </div>
+      <TechStack />
     </div>
   );
 }

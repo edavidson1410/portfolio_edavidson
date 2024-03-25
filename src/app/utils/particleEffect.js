@@ -26,7 +26,7 @@ const particleEffect = (canvas, context) => {
             this.distance = 0;
             this.force = 0;
             this.angle = 0;
-            this.size = Math.floor(Math.random() * 5);
+            this.size = Math.floor(Math.random() * 4);
             this.draw();
         }   
 
