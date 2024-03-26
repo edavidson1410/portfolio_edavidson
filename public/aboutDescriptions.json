@@ -1,0 +1,19 @@
+[
+    {
+        "title": "St. Louis Bombers",
+        "description": "Division 1 Men's Club Player: 2017-Present",
+        "facts": {
+            "1": "2021 National Sevens - 4th Place",
+            "2": "2023 Midwest Division Champion",
+            "3": "2024 National Qualifier"
+        }
+    },
+    {
+        "title": "LaunchCode",
+        "description": "2023-2024 Web Development Graduate",
+        "facts": {
+            "1": "React, Java, SpringBoot",
+            "2": "Developed capstone project 'CouchCat'"
+        }
+    }
+]
