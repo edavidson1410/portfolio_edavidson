@@ -11,7 +11,7 @@ const HeroSection = () => {
   // TODO: Improve Canvas speed
 
   return (
-    <section className="flex justify-center h-screen relative bottom-36 overflow-hidden" id="hero">
+    <section className="flex justify-center h-screen relative bottom-36 md:overflow-hidden" id="hero">
       <Canvas />
       <div className="flex items-center justify-center flex-wrap">
         <div className="absolute w-fit h-fit bg-eggShell flex flex-col gap-4 p-6 rounded-lg">
