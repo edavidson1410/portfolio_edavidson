@@ -23,7 +23,7 @@ function NavBar() {
   }
 
   return (
-    <section className={`flex justify-between content-center sticky top-0 z-10 transition-shadow ${scrollPosition > 0 ? "shadow-md bg-opacity-80 backdrop-blur-lg" : "shadow-none bg-eggShell"}`}>
+    <section className={`flex justify-between content-center sticky top-0 z-20 transition-shadow ${scrollPosition > 0 ? "shadow-md bg-opacity-80 backdrop-blur-lg" : "shadow-none bg-eggShell"}`}>
       {/* future logo */}
       <header className="hidden md:flex gap-2 m-3">
         <Image className="self-center w-1/12" src={test_logo} alt="Logo" />
@@ -45,7 +45,7 @@ function NavBar() {
       <nav className="md:hidden z-20 flex w-100">
         <button className="md:hidden">
           <Image onClick={handleClick} className="w-1/4" src={isOpen ? close : burger_menu} alt="hamburger" /> 
-            <nav className={`absolute flex flex-col gap-3 z-20 self-center bg-accentPink w-full right-0 mt-4 p-8 rounded-b-lg ${isOpen ? "" : "hidden"}`}>
+            <nav className={`absolute flex flex-col gap-3 z-20 self-center bg-accentPink w-full right-0 mt-3 p-8 rounded-b-lg ${isOpen ? "" : "hidden"}`}>
               <Socials onClick={handleClick} />
               <Link onClick={handleClick} href="#hero" scroll className={`text-xl ${linkHover}`}>Home</Link>
               <Link onClick={handleClick} href="#about" scroll className={`text-xl ${linkHover}`}>About</Link>

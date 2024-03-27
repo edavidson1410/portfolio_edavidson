@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main >
       <NavBar />
-      <section className="flex min-h-screen max-w-full flex-col m-4 text-center md:m-8">
+      <section className="flex min-h-screen max-w-full flex-col m-4 text-center md:m-0 md:mb-10">
         <HeroSection />
         <AboutSection />
         <ProjectSection />
