@@ -6,6 +6,7 @@ import Button from './Button';
 import Image from 'next/image';
 import test_logo from '../../public/assets/test_svg.svg';
 import burger_menu from '../../public/assets/burger_menu.svg';
+import close from '../../public/assets/close.svg';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import Socials from './Socials';
 
@@ -41,18 +42,21 @@ function NavBar() {
       </header>
     {/* hamburger menu */}
       <Image className="md:hidden self-center w-1/6" src={test_logo} alt="Logo" />
-      <button className="md:hidden">
-        <Image onClick={handleClick} className="w-1/4" src={burger_menu} alt="hamburger" /> 
-          <nav className={`absolute flex flex-col gap-3 z-20 self-center ${isOpen ? "" : "hidden"}`}>
-            <Socials onClick={handleClick} />
-            <Link onClick={handleClick} href="#hero" scroll className={`text-xl ${linkHover}`}>Home</Link>
-            <Link onClick={handleClick} href="#about" scroll className={`text-xl ${linkHover}`}>About</Link>
-            <Link onClick={handleClick} href="#projects" scroll className={`text-xl ${linkHover}`}>Projects</Link>
-          </nav>
-      </button>
-      <Link href="#contact" className="flex justify-end" scroll>
-        <Button text="Contact Me!" className="p-1 text-xl m-3"/>
-      </Link>  
+      <nav className="md:hidden z-20 flex w-100">
+        <button className="md:hidden">
+          <Image onClick={handleClick} className="w-1/4" src={isOpen ? close : burger_menu} alt="hamburger" /> 
+            <nav className={`absolute flex flex-col gap-3 z-20 self-center bg-accentPink w-full right-0 mt-4 p-8 rounded-b-lg ${isOpen ? "" : "hidden"}`}>
+              <Socials onClick={handleClick} />
+              <Link onClick={handleClick} href="#hero" scroll className={`text-xl ${linkHover}`}>Home</Link>
+              <Link onClick={handleClick} href="#about" scroll className={`text-xl ${linkHover}`}>About</Link>
+              <Link onClick={handleClick} href="#projects" scroll className={`text-xl ${linkHover}`}>Projects</Link>
+            </nav>
+        </button>
+        <Link href="#contact" className="flex justify-end" scroll>
+          <Button text="Contact Me!" className="p-1 text-xl m-3"/>
+        </Link>  
+      </nav>
+
     </section>
   );
 }
