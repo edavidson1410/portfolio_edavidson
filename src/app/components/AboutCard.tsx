@@ -2,7 +2,13 @@
 
 import React, { useState } from "react";
 
-function AboutCard({title, description, facts}) {
+interface AboutEntry {
+  title: string,
+  description: string,
+  facts: string[]  
+}
+
+function AboutCard(aboutEntry: AboutEntry) {
 
 const [toggle, setToggle] = useState(false);
 
@@ -15,12 +21,12 @@ const [toggle, setToggle] = useState(false);
               return !prev;
             });
           }}
-        >{title}</h3>
+        >{aboutEntry.title}</h3>
         <p
           className={`p-0 overflow-hidden h-${
             toggle ? "20" : "2"
           }`}
-        >{description}</p>
+        >{aboutEntry.description}</p>
       </article>
     </div>
   )

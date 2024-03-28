@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import Link from 'next/link';
 import {
   LinkedinIcon,
@@ -9,14 +9,16 @@ import {
   LinkedinShareButton
 } from 'next-share';
 
-function Socials(props) {
+interface Props {
+  onClick?: MouseEventHandler
+}
 
-  const {onClick} = props;
+function Socials(props: Props) {
 
   const hoverStyle = "transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl";
 
   return (
-    <div onClick={onClick} className="flex justify-center">
+    <div onClick={props.onClick} className="flex justify-center">
       <Link href="https://www.linkedin.com/in/edavidson1410/" target="_blank" className={`flex items-center ${hoverStyle}`}>
         <LinkedinIcon round={true} size="50" />
       </Link>

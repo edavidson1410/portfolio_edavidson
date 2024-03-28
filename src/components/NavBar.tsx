@@ -29,7 +29,7 @@ function NavBar() {
         <Image className="self-center w-1/12" src={test_logo} alt="Logo" />
         <div className="h-12 border-solid border-secondary border self-center"></div>
         <nav className="flex gap-3 self-center">
-          <Link href="#hero" scroll className={`text-xl ${linkHover}`}>Home</Link>
+          <Link href="/" scroll className={`text-xl ${linkHover}`}>Home</Link>
           <Link href="#about" scroll className={`text-xl ${linkHover}`}>About</Link>
           <Link href="#projects" scroll className={`text-xl ${linkHover}`}>Projects</Link>
         </nav>
@@ -47,7 +47,7 @@ function NavBar() {
           <Image onClick={handleClick} className="w-1/4" src={isOpen ? close : burger_menu} alt="hamburger" /> 
             <nav className={`absolute flex flex-col gap-3 z-20 self-center bg-accentPink w-full right-0 mt-3 p-8 rounded-b-lg ${isOpen ? "" : "hidden"}`}>
               <Socials onClick={handleClick} />
-              <Link onClick={handleClick} href="#hero" scroll className={`text-xl ${linkHover}`}>Home</Link>
+              <Link onClick={handleClick} href="/" scroll className={`text-xl ${linkHover}`}>Home</Link>
               <Link onClick={handleClick} href="#about" scroll className={`text-xl ${linkHover}`}>About</Link>
               <Link onClick={handleClick} href="#projects" scroll className={`text-xl ${linkHover}`}>Projects</Link>
             </nav>
