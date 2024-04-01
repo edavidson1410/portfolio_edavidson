@@ -23,6 +23,10 @@ module.exports = {
       height: {
         '80vh': '80vh'
       },
+      width: {
+        '5%': '5%',
+        '3%': '3%'
+      },
       colors: {
         // blue
         primary: "#328cc1",

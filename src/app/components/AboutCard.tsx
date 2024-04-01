@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from "react";
+import Image from "next/image";
+import arrow from "../../../public/assets/open_arrow.svg";
 
 interface AboutEntry {
   title: string,
@@ -12,21 +14,25 @@ function AboutCard(aboutEntry: AboutEntry) {
 
 const [toggle, setToggle] = useState(false);
 
+
+
   return (
     <div>
-      <article className="border-2 shadow-lg w-fit">
-        <h3
-          onClick={() => {
-            setToggle(prev => {
-              return !prev;
-            });
-          }}
-        >{aboutEntry.title}</h3>
-        <p
-          className={`p-0 overflow-hidden h-${
-            toggle ? "20" : "2"
-          }`}
-        >{aboutEntry.description}</p>
+      <article className="flex flex-col justify-between max-w-2xl border-2 shadow-lg hover:cursor-pointer"
+        onClick={() => {
+          setToggle(prev => {
+            return !prev;
+          });
+        }}>
+          <div className="flex justify-center">
+            <h3
+              className="self-center"
+              >{aboutEntry.title}</h3>
+              <Image className={`w-5% md:w-3% justify-self-end ${toggle ? "animate-rotate" : ""}`} src={arrow} alt="arrow" />
+          </div>
+          <p
+              className={`p-0 overflow-hidden ${toggle ? "h-20" : "hidden"}`}
+            >{aboutEntry.description}</p>
       </article>
     </div>
   )
