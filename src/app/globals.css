@@ -11,6 +11,12 @@ body {
   background-color: var(--global-bg);
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

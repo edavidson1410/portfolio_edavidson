@@ -26,13 +26,13 @@ const particleEffect = (canvas, context) => {
             this.distance = 0;
             this.force = 0;
             this.angle = 0;
-            this.size = Math.floor(Math.random() * 5);
+            this.size = Math.floor(Math.random() * 4);
             this.draw();
         }   
 
         draw(){
             this.context.beginPath();
-            this.context.fillRect(this.x, this.y, this.size, this.size)
+            this.context.fillRect(this.x, this.y, this.size, this.size);
         }
 
         update(){
@@ -62,7 +62,7 @@ const particleEffect = (canvas, context) => {
             this.particlesArray = [];
             this.gap = 20;
             this.mouse = {
-                radius: 3000,
+                radius: 500,
                 x: 0,
                 y: 0
             }

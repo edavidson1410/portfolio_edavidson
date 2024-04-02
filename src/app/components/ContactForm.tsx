@@ -3,7 +3,7 @@
 import Button from '@/components/Button';
 import React, { ChangeEvent, useState } from 'react';
 
-function ContactForm(props) {
+function ContactForm() {
 
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
@@ -13,15 +13,15 @@ function ContactForm(props) {
   const url: string = '/api/email';
   const date: Date = new Date();
 
-  const handleNameChange = (event) => {
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setName(value);
   };
-  const handleEmailChange = (event) => {
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setEmail(value);
   };
-  const handleMessageChange = (event) => {
+  const handleMessageChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = event.target.value;
     setMessage(value);
   };
@@ -30,8 +30,8 @@ function ContactForm(props) {
 
   };
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
     formValidation();
     if(formValid != true) {
       return;
@@ -53,7 +53,7 @@ function ContactForm(props) {
   };
 
   return (
-    <div className="md:max-w-1/2 md:ml-1/4">
+    <div className="md:max-w-xl md:m-auto">
       <form id="contactForm" onSubmit={onSubmit}>
         <div className="mb-4">
             <div className="mx-0 mb-1 sm:mb-4">
