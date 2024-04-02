@@ -53,7 +53,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="md:max-w-1/2 md:ml-1/4">
+    <div className="md:max-w-xl md:m-auto">
       <form id="contactForm" onSubmit={onSubmit}>
         <div className="mb-4">
             <div className="mx-0 mb-1 sm:mb-4">

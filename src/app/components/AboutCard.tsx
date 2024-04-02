@@ -14,25 +14,29 @@ function AboutCard(aboutEntry: AboutEntry) {
 
 const [toggle, setToggle] = useState(false);
 
-
-
   return (
     <div>
-      <article className="flex flex-col justify-between max-w-2xl border-2 shadow-lg hover:cursor-pointer"
+      <article className="flex flex-col gap-2 justify-between max-w-2xl border-2 shadow-lg hover:cursor-pointer"
         onClick={() => {
           setToggle(prev => {
             return !prev;
           });
         }}>
-          <div className="flex justify-center">
+          <div className="flex justify-between p-3">
+            <div id="dummyDiv"></div>
             <h3
               className="self-center"
               >{aboutEntry.title}</h3>
-              <Image className={`w-5% md:w-3% justify-self-end ${toggle ? "animate-rotate" : ""}`} src={arrow} alt="arrow" />
+              <Image className={`w-5% md:w-3% ${toggle ? "animate-rotate" : ""}`} src={arrow} alt="arrow" />
           </div>
-          <p
-              className={`p-0 overflow-hidden ${toggle ? "h-20" : "hidden"}`}
-            >{aboutEntry.description}</p>
+          <div className={`p-0 overflow-hidden ${toggle ? "h-fit" : "hidden"}`}>
+            <p>{aboutEntry.description}</p>
+            <ul className="flex flex-col gap-2 p-2">
+              {aboutEntry.facts.map((fact, index) => {
+                return <li key={index}>{fact}</li>;
+              })}
+            </ul>
+          </div>
       </article>
     </div>
   )
