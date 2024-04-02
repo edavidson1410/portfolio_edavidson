@@ -3,11 +3,11 @@ import particleEffect from '@/app/utils/particleEffect';
 
 function useCanvas() {
 
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
-    const canvas: HTMLCanvasElement = ref.current;
-    const context: CanvasRenderingContext2D = canvas.getContext('2d');
+    const canvas: HTMLCanvasElement = ref.current!;
+    const context: CanvasRenderingContext2D = canvas.getContext('2d')!;
 
     console.log(canvas)
     console.log(context)
