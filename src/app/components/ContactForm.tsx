@@ -28,7 +28,7 @@ function ContactForm() {
   };
 
   const formValidation = () => {
-
+    // TODO: Complete validation
   };
 
   const onSubmit = async (event: React.FormEvent) => {
@@ -47,11 +47,9 @@ function ContactForm() {
     })
     .then(response => {
       console.log(response);
-      // TODO: clear inputs after submit
       setName("");
       setEmail("");
       setMessage("");
-      
     })
     .catch(error => {
       console.log(error);
@@ -59,7 +57,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="md:max-w-xl md:m-auto">
+    <div className="md:max-w-xl min-h-fit md:m-auto">
       <form id="contactForm" onSubmit={onSubmit}>
         <div className="mb-4">
             <div className="mx-0 mb-1 sm:mb-4">

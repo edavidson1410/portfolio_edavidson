@@ -9,9 +9,6 @@ function useCanvas() {
     const canvas: HTMLCanvasElement = ref.current!;
     const context: CanvasRenderingContext2D = canvas.getContext('2d')!;
 
-    console.log(canvas)
-    console.log(context)
-
     particleEffect(canvas, context);
   }, []);
 

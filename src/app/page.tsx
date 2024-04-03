@@ -18,7 +18,7 @@ export default function Home() {
         <ProjectSection />
         <ContactSection />
       </section>
-
+      <h1 className="flex justify-center items-center bg-secondary h-10">Made with love by Eric Davidson</h1>
     </main>
   );
 }

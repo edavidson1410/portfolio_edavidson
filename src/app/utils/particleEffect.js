@@ -62,13 +62,13 @@ const particleEffect = (canvas, context) => {
             this.particlesArray = [];
             this.gap = 20;
             this.mouse = {
-                radius: 500,
+                radius: 1000,
                 x: 0,
                 y: 0
             };
             window.addEventListener('mousemove', e => {
                 this.mouse.x = e.clientX * window.devicePixelRatio;
-                this.mouse.y = e.pageY * window.devicePixelRatio;
+                this.mouse.y = e.clientY * window.devicePixelRatio;
             });
 
             window.addEventListener('resize', () => {

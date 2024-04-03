@@ -19,14 +19,14 @@ function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div className="flex flex-col gap-2 md:flex-row p-4">
-      <div className="flex md:w-1/2 flex-col gap-5 items-centerm border-b-8 border-r-8 border-primary p-2">
-        <h2 className="text-2xl font-black">{title}</h2>
+      <div className="flex md:w-1/2 flex-col gap-5 items-center justify-center border-b-8 border-r-8 border-primary p-2">
+        <h2 className="text-2xl font-black justify-self-start">{title}</h2>
         <ul className="flex justify-center gap-4">
           {stack?.map((item) => {
               return <TechStackButton key={item} technology={item} />
             })}
         </ul>
-        <p>{description}</p>
+        <p className="max-w-1/2">{description}</p>
         <a href={gitLink} target="_blank"><Button text="GitHub Link" className="p-1"/></a>
       </div>
       <div className="flex flex-col md:w-1/2">

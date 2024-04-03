@@ -20,7 +20,7 @@ function NavBar() {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <section className={`flex justify-between content-center sticky top-0 z-20 transition-shadow ${scrollPosition > 0 ? "shadow-md bg-opacity-80 backdrop-blur-lg" : "shadow-none bg-eggShell"}`}>
