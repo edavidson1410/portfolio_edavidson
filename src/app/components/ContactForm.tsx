@@ -8,7 +8,8 @@ function ContactForm() {
   const [name, setName] = useState<string>();
   const [email, setEmail] = useState<string>();
   const [message, setMessage] = useState<string>();
-  const [formValid, setFormValid] = useState<boolean>(false);
+  // TODO: change to false after form validation
+  const [formValid, setFormValid] = useState<boolean>(true);
 
   const url: string = '/api/email';
   const date: Date = new Date();
@@ -46,6 +47,11 @@ function ContactForm() {
     })
     .then(response => {
       console.log(response);
+      // TODO: clear inputs after submit
+      setName("");
+      setEmail("");
+      setMessage("");
+      
     })
     .catch(error => {
       console.log(error);
@@ -59,16 +65,16 @@ function ContactForm() {
             <div className="mx-0 mb-1 sm:mb-4">
                 <div className="mx-0 mb-1 sm:mb-4">
                     <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label>
-                    <input onChange={handleNameChange} type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name"/>
+                    <input onChange={handleNameChange} value={name} type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name"/>
                 </div>
                 <div className="mx-0 mb-1 sm:mb-4">
                     <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label>
-                    <input onChange={handleEmailChange} type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email"/>
+                    <input onChange={handleEmailChange} value={email} type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email"/>
                 </div>
             </div>
             <div className="mx-0 mb-1 sm:mb-4">
                 <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label>
-                <textarea onChange={handleMessageChange} id="textarea" name="textarea" cols={30} rows={5} placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" />
+                <textarea onChange={handleMessageChange} value={message} id="textarea" name="textarea" cols={30} rows={5} placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" />
             </div>
         </div>
           <div className="text-center">
