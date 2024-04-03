@@ -49,7 +49,7 @@ const particleEffect = (canvas, context) => {
 
             this.x += (this.vx *= this.friction) + (this.originX - this.x) * this.ease;
             this.y += (this.vy *= this.friction) + (this.originY - this.y) * this.ease;
-            this.draw()
+            this.draw();
         }
     }
 
@@ -62,33 +62,33 @@ const particleEffect = (canvas, context) => {
             this.particlesArray = [];
             this.gap = 20;
             this.mouse = {
-                radius: 500,
+                radius: 1000,
                 x: 0,
                 y: 0
-            }
+            };
             window.addEventListener('mousemove', e => {
                 this.mouse.x = e.clientX * window.devicePixelRatio;
-                this.mouse.y = e.pageY * window.devicePixelRatio;
-            })
+                this.mouse.y = e.clientY * window.devicePixelRatio;
+            });
 
             window.addEventListener('resize', () => {
                 canvas.width = window.innerWidth * window.devicePixelRatio;
                 canvas.height = window.innerHeight * window.devicePixelRatio;
-                this.width = canvas.width
-                this.height = canvas.height
+                this.width = canvas.width;
+                this.height = canvas.height;
                 canvas.style.width = `${window.innerWidth}px`;
                 canvas.style.height = `${window.innerHeight}px`;
             
                 this.particlesArray = [];
                 this.init();
-            })
+            });
             this.init();
         }
 
         init(){
             for(let x = 0; x < this.width; x += this.gap){
                 for(let y = 0; y < this.height; y += this.gap){
-                    this.particlesArray.push(new Particle(x, y, this))
+                    this.particlesArray.push(new Particle(x, y, this));
                 }
             }
         }
