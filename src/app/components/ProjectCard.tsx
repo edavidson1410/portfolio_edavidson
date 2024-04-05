@@ -19,7 +19,7 @@ function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div className="flex flex-col gap-2 md:flex-row p-4">
-      <div className="flex md:w-1/2 flex-col gap-5 items-center justify-center border-b-8 border-r-8 border-primary p-2">
+      <div className="flex md:w-1/2 flex-col gap-5 items-center justify-center border-b-8 border-r-8 border-primary p-2 rounded-md">
         <h2 className="text-2xl font-black justify-self-start">{title}</h2>
         <ul className="flex justify-center gap-4">
           {stack?.map((item) => {
