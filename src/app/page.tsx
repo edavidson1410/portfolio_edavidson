@@ -18,7 +18,7 @@ export default function Home() {
         <ProjectSection />
         <ContactSection />
       </section>
-      <h1 className="flex justify-center items-center bg-secondary h-10">Made with love by Eric Davidson</h1>
+      <h1 className="flex justify-center items-center bg-secondary h-10">Daevo Web Designs circa 2024</h1>
     </main>
   );
 }

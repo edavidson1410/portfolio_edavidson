@@ -68,7 +68,8 @@ const particleEffect = (canvas, context) => {
             };
             window.addEventListener('mousemove', e => {
                 this.mouse.x = e.clientX * window.devicePixelRatio;
-                this.mouse.y = e.clientY * window.devicePixelRatio;
+                // TODO: investigate why I need the -140
+                this.mouse.y = e.clientY * window.devicePixelRatio - 160;
             });
 
             window.addEventListener('resize', () => {
