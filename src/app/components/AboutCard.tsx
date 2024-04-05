@@ -27,7 +27,7 @@ const [toggle, setToggle] = useState(false);
             <h3
               className="self-center"
               >{aboutEntry.title}</h3>
-              <Image className={`w-5% md:w-3% ${toggle ? "rotate-180" : ""}`} src={arrow} alt="arrow" />
+              <Image className={`w-5% md:w-3% ${toggle ? "" : "rotate-180"}`} src={arrow} alt="arrow" />
           </div>
           <div className={`p-0 overflow-hidden ${toggle ? "h-fit" : "hidden"}`}>
             <p>{aboutEntry.description}</p>
